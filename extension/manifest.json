@@ -1,0 +1,14 @@
+{
+  "name": "Chrome Extension with Python",
+  "version": "1.0.0",
+  "description": "Chrome Extension using WebAssembly and Python",
+  "manifest_version": 3,
+  "author": "Michael Ehab",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Demo"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  }
+}
